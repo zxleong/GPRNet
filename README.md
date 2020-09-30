@@ -2,7 +2,7 @@
 
 GPRNet architecture is found at DLcodes/GPRNet.py
 
-Note: This repository contains codes. To reproduce the figures at a local machine, please download all data sets here: https://bit.ly/36hDrRj (The password is *a u t o m a t e G P R* , without spaces)
+Note: This repository contains only codes. To reproduce the figures at a local machine, please download all data sets here: https://bit.ly/36hDrRj (The password is *a u t o m a t e G P R* , without spaces)
 
 
 #### **Synthetic EM Velocity Inversion**
