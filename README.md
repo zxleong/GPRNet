@@ -2,6 +2,9 @@
 
 GPRNet architecture is found at DLcodes/GPRNet.py
 
+Note: The Synthetic, Field, and UQ folders can be downloaded at :
+
+
 #### **Synthetic EM Velocity Inversion**
 ##### 1D Scenario:-
 
