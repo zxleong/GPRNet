@@ -2,7 +2,7 @@
 
 GPRNet architecture is found at DLcodes/GPRNet.py
 
-Note: The Synthetic, Field, and UQ folders can be downloaded at :
+Note: This repository only contain codes. To reproduce the figures at a local machine, please download all data sets here: 
 
 
 #### **Synthetic EM Velocity Inversion**
@@ -84,30 +84,30 @@ Note: The Synthetic, Field, and UQ folders can be downloaded at :
 14. Run *14-GPR_sim.m*
     - Simulates 50,000 GPR traces (this is a large job, might want to split this into a few parts)
     - Creates these files:
-      - Field/Data/fdrawgathers.mat (this is a large file, so I didn’t include it here)
+      - Field/Data/fdrawgathers.mat (intermediate files, skipping upload)
 
 15. Run *15-process_GPR_Vel_part1.m*
     - Preprocess GPR data and Velocity
-    - Creates these files: (these intermediate files are large. skipping upload)
-    - Field/Data/AllRawGathers.mat 
-    - Field/Data/veltd_raw_corr.mat 
+    - Creates these files: (intermediate files, skipping upload)
+      - Field/Data/AllRawGathers.mat 
+      - Field/Data/veltd_raw_corr.mat 
 
 16. Run *16-process_GPR_Vel_part2.py*
     - Create data and velocity for GPRNet training
     - Augmentation of data set takes place here
-    - Creates these files: (these intermediate files are large. skipping upload)
+    - Creates these files: (intermediate files, skipping upload)
       - Field/Data/ForDL/GPRData.npy
       - Field/Data/ForDL/Vel.npy
 
 17. Run *17-field_Data_Loader.py*
     - Splits data set into training, testing and validation
     - Creates these files:
-    - Field/Data/ForDL/field_X_train.npy
-    - Field/Data/ForDL/field_X_valid.npy
-    - Field/Data/ForDL/field_X_test.npy
-    - Field/Data/ForDL/field_y_train.npy
-    - Field/Data/ForDL/field_y_valid.npy
-    - Field/Data/ForDL/field_y_true.npy
+      - Field/Data/ForDL/field_X_train.npy
+      - Field/Data/ForDL/field_X_valid.npy
+      - Field/Data/ForDL/field_X_test.npy
+      - Field/Data/ForDL/field_y_train.npy
+      - Field/Data/ForDL/field_y_valid.npy
+      - Field/Data/ForDL/field_y_true.npy
 
 18. Run *18-Field_DL_Training.py*
     - Trains GPR data and Velocity 
