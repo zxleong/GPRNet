@@ -1,7 +1,5 @@
 # GPRNet - GPR Inversion Using Deep Learning
 
-GPRNet architecture is found at DLcodes/GPRNet.py
-
 Note: This repository contains only codes. To reproduce the figures at a local machine, please download all data sets here: https://bit.ly/36hDrRj (The password is *a u t o m a t e G P R* , without spaces)
 
 #### Key Points from paper:
@@ -10,6 +8,7 @@ Note: This repository contains only codes. To reproduce the figures at a local m
 - Applications to field data yield predictions that agree with the velocity models derived from previous physics-based inversion studies
 
 #### GPRNet Architecture comment:
+GPRNet architecture is found at DLcodes/GPRNet.py
 - Essentially, it's an encoder-decoder based Convolutional Neural Network (CNN).
 - The framework is designed based on the on DeepLabV3 architecture(https://arxiv.org/abs/1706.05587)
 
