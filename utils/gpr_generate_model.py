@@ -94,8 +94,8 @@ def generate_interface_gpr(num_vel=500, air=10, num_layers=(4,6), num_bricks_eac
                 y_arr.append(np.arange(i, j+1))
             return y_arr
         
-        #Create a new of water array
-        tile = np.ones((vertical_dim,horizontal_dim)) * 140e6
+        #Create an array
+        tile = np.ones((vertical_dim,horizontal_dim))
     
         #After creating mask of indices, we need to fill the shape with velocity values
         start_interf = 0
