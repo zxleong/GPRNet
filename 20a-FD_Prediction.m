@@ -12,7 +12,7 @@
 clear all
 addpath(genpath('./misc'));
 
-ep_stack = struct2array(load('Field/Data/prediction/ep_FieldPrediction.mat'))';
+ep_stack = struct2array(load('Field/Data/prediction/ep_FieldPrediction_rev.mat'))';
 ep_stack(1:10,:) = 1; %reaffirm air layer
 
 %FDTD only take odd rows and column, so im dropping the last column
@@ -98,7 +98,7 @@ for num=1:207
     Stacked_1D(:,num)=gather;
 end
 
-save('Field/Data/prediction/rawgather_Stacked1D_fieldprediction.mat','Stacked_1D');
+save('Field/Data/prediction/rawgather_Stacked1D_fieldprediction_rev.mat','Stacked_1D');
 
 
 
