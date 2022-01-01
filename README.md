@@ -127,35 +127,13 @@ GPRNet architecture is found at DLcodes/GPRNet.py
     - Creates Field/Data/rawfielddata/codata.mat
 
 20. Run *20-Field_Application.ipynb (jupyter notebook)*
-    - **Reproduces Figure 8, 9, 10**
+    - **Reproduces Figure 7, 8, 9, 10**
     - Applies trained weights to common-offset data to obtain field prediction
     - Follow instructions inside notebook to simulate forward data based on field prediction
     - Creates these files:
-      - Field/Data/pcsfielddata/RawFieldData.npy
-      - Field/Data/pcsfielddata/ProcessedFieldData.npy
-      - Field/Data/prediction/FieldPrediction.npy
-      - Field/Data/prediction/ep_FieldPrediction.mat
-      - Field/Data/prediction/rawgather_Stacked1D_fieldprediction.mat (this is created in 20a-FD_pred.m)
-      - Field/Data/prediction/ForwDataFrPred.npy
+      - Field/Data/pcsfielddata/ProcessedFieldData_rev.npy
+      - Field/Data/prediction/FieldPrediction_rev.npy
+      - Field/Data/prediction/ep_FieldPrediction_rev.mat
+      - Field/Data/prediction/rawgather_Stacked1D_fieldprediction_rev.mat (this is created in 20a-FD_pred.m)
+      - Field/Data/prediction/ForwDataFrPred_rev.npy
 
-#### Uncertainty Quantification
-
-21. Run *21-Synthetic_UQ.ipynb* (jupyter notebook)
-    - **Reproduces Figures 11, 12, 13, 14**
-    - Simulates uncertainties with regards to dropout
-    - Creates these files:
-      - UQ/Data/Synthetic/all_dropout_predictions_0p05.npy
-      - UQ/Data/Synthetic/all_dropout_predictions_0p1.npy
-      - UQ/Data/Synthetic/all_dropout_predictions_0p2.npy
-      - UQ/Data/Synthetic/all2D_dropout_predictions_example.npy
-
-
-22. Run *22-Field_UQ.ipynb* (jupyter notebook)
-    - **Reproduces Figures 15, 16**
-    - Produces uncertainties for field prediction
-    - Files created beforehand (read notebook for more details):
-      - UQ/Data/Field/X_test_spec.npy
-      - UQ/Data/Field/y_True_spec.npy
-    - Creates these files:
-      - UQ/Data/Field/ypred_spec.npy
-      - UQ/Data/Field/field_dropout_preds.npy
