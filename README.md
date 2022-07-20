@@ -1,6 +1,6 @@
 # GPRNet - GPR Inversion Using Deep Learning
 
-Update 1/1/2022: This repo is now updated to reflect the figures and results that are produced in the paper. If you downloaded the files before 1/1/2022, kindly re-download again.
+Update 1/1/2022: This repo is now updated to reflect the figures and results that are produced in the paper. If you downloaded the files before 1/1/2022, please re-download again.
 
 Note: This repository contains only codes. To reproduce the figures at a local machine, please download all data sets here: https://bit.ly/36hDrRj (The password is *a u t o m a t e G P R* , without spaces)
 
